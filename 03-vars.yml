@@ -18,3 +18,13 @@
     - name: print URL
       ansible.builtin.debug:
         msg: URL - {{ URL }}  
+
+
+
+
+- name: variable from role
+  hosts: all
+  vars: 
+    URL_Play: paly.example.com
+  roles:
+    - sample        
