@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name: Demo task for loop
-      ansible.buitin.debug: 
+      ansible.builtin.debug: 
         msg: fruit name - {{ item }}
       loop: 
         - apple
